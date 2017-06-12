@@ -186,6 +186,7 @@ public class GurobiCVRP {
                         break;
                 if (node == n)
                     break;
+                currentTotalDemand = 0.0;
                 for (len = 0; len < n; len++) {
                     cycleContainsDepot = node == DEPOT;
                     tour[start + len] = node;
